@@ -1,0 +1,154 @@
+@import 'https://fonts.googleapis.com/css?family=Poppins';
+
+:root {
+    --green: #4dbe8d;
+    --red: rgb(218, 72, 72);
+    --low-blue: #B8DFD8;
+    --low-orange: #FFEBA1;
+    --white: rgb(236, 236, 236);
+
+    --color_body: rgb(58, 58, 58);
+    --color_btn: var(--white);
+    
+    --background-btn-onImg: rgba(58, 58, 58, .4);
+    --background-btn-onImg2: var(--red);
+    --background_btn-borrow: var(--low-blue);
+    --background_btn-return: var(--low-orange);
+    --background_btn-add: var(--green);
+    --background_btn-delete: var(--red);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* shortcut */
+
+/* border */
+.b-radius-trendy { border-radius: 10px }
+
+/* display */
+.d-flex-between { 
+    display: flex;
+    justify-content: space-between;
+}
+/* tutup */
+
+
+/* hapus kebiasaan default */
+:focus { outline: none }
+li:not(.primitive) { list-style: none }
+button { 
+    font-weight: 600;
+    font-family: 'Poppins';
+    border: none;
+}
+a:not(.primitive) { 
+    color: var(--color_body); 
+    text-decoration: none; 
+}
+/* tutup */
+
+.disabled { 
+    opacity: .5; 
+    cursor: crosshair;
+}
+
+body { 
+    color: var(--color_body);
+    font-family: 'Poppins', Arial, Helvetica, sans-serif 
+}
+
+.wrapper_modal {
+    /* display: none; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.wrapper_modal.active { display: block }
+
+.modal {
+    padding: 20px 10px;
+    margin: 20px auto;
+    width: 700px; 
+    max-width: 90%;
+    background-color: whitesmoke;
+}
+
+.modal .close { 
+    color: var(--red);
+    text-align: right 
+}
+
+.btn_section {
+    margin: 30px 0;
+}
+
+.btn_section .btn {
+    padding: 12px 15px;
+}
+
+.btn_section .btn a { color: var(--color_btn) }
+.btn_section .add { background-color: var(--background_btn-add) }
+.btn_section .delete { color: var(--white); background-color: var(--background_btn-delete) }
+
+.wrapper_books {
+    padding: 20px;
+}
+
+.list_books {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book {
+    margin: 10px 10px;
+}
+
+.image {
+    position: relative;
+    content: '';
+    width: 250px;
+    height: 315px;
+    background-color: blue;
+    overflow: hidden;
+}
+
+.btn_delete-onImg {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-btn-onImg);
+}
+
+.btn_delete-onImg.active { display: block }
+
+.btn_delete-onImg, .btn_delete-onImg a {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn_delete-onImg a {
+    padding: 8px 12px;
+    background-color: var(--background-btn-onImg2);
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn {
+    padding: 10px 12px;
+    cursor: pointer;
+}
+.btn.borrow { background-color: var(--background_btn-borrow) }
+.btn.return { background-color: var(--background_btn-return) }
