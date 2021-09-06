@@ -1,1 +1,3 @@
-# test_technical_dumbways
+# Hello all 😉
+## Repo ini berisi technical test DumbWays
+
