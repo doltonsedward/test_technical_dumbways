@@ -1,5 +1,6 @@
-# Hello all 😉
-## Repo ini berisi technical test DumbWays
+<h1 align="center">
+  Technical Test DumbWays
+</h1>
 
 ### Introduction
 Perkenalkan saya <b>Doltons Edward Nicholas</b> seorang frontend developer, Diatas sudah saya bilang bahwa repo ini hanya berisi tentang technical test dari bootcamp DumbWayd.
